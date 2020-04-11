@@ -57,7 +57,7 @@ module.exports = {
         },
         callback: (response = {}, argument = {}) => { }
     },
-    `400, 401, 500: {
+    `400, 401, 500': {
         response: {
             defaults: {
                 string: {
