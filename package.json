@@ -11,7 +11,11 @@
     "url": "git+https://github.com/rarenode/customize-response.git"
   },
   "keywords": [
-    "customize-response"
+    "customize-response",
+    "custom-response",
+    "response",
+    "express",
+    "node"
   ],
   "author": "Haider Khan",
   "license": "ISC",
