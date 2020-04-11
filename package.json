@@ -1,7 +1,7 @@
 {
   "name": "@rarenode/customize-response",
   "version": "1.0.2",
-  "description": "",
+  "description": "Customize response middleware for express.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
