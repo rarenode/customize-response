@@ -37,7 +37,7 @@ app.all('*', rareCustomizeResponseMiddleware);
 ## How rare-responses-config.js File look like
 ```
 module.exports = {
-    '200, 400, 401': {
+    '200': {
         response: {
             defaults: {
                 string: {
@@ -57,7 +57,7 @@ module.exports = {
         },
         callback: (response = {}, argument = {}) => { }
     },
-    500: {
+    `400, 401, 500: {
         response: {
             defaults: {
                 string: {
@@ -81,14 +81,15 @@ module.exports = {
 ```
 
 ## Description of responses-config.js File
-### '200, 400, 401'
-So as you can see I wrote these three values 200 & 400 in a string with a comma-separated them,
-it means that I am asking this module to make 3 functions with status code 200, 400 & 401.
+### '200, 400, 401, 500'
+So as you can see I wrote these 4 values 200, 400, 401, 500 in a string with a comma-separated them,
+it means that I am asking this module to make 4 functions with status code 200, 400 ,401 & 500.
 #### **Note:**
-Response appender will append 2 functions on your `res` object in a route with the name
+Response appender will append 4 functions on your `res` object in a route with the name
 * res.http200()
 * res.http400()
 * res.http401()
+* res.http500()
 
 ### 'response, callback'
 Here you can see there are 2 fields defined in the object under the heading I described above.
