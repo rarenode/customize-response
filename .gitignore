@@ -3,3 +3,4 @@ node_modules
 
 # Vscode
 .vscode
+.idea/
